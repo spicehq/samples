@@ -1,0 +1,6 @@
+[submodule "python/snippets/mining_time"]
+	path = python/snippets/mining_time
+	url = https://github.com/spicehq/snippets-python-mining.git
+[submodule "python/snippets/base"]
+	path = python/snippets/base
+	url = https://github.com/spicehq/snippets-python-base.git
