@@ -17,3 +17,5 @@ pip install -r requirements.txt
 ```
 
 Each script needs an API key to access the API as its first arguments.
+
+`snippets` folder contains template code used as sample in the portal, the API key needs to be replaced to be used.
