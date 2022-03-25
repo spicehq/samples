@@ -4,11 +4,15 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from pyarrow import flight
 
+from grpc_cert import get_grpc_cert
+
 
 def main():
     parser = ArgumentParser()
     parser.add_argument('api_key', help='API key to authenticate with')
     arguments = parser.parse_args()
+
+    get_grpc_cert()
 
     print('Connecting..')
     client = flight.connect('grpc+tls://flight.spiceai.io')
