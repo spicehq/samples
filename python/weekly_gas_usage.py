@@ -14,7 +14,7 @@ def main():
     client = Client(arguments.api_key)
     print('Querrying data...')
     reader = client.query(
-        'SELECT "timestamp", gas_used FROM eth.blocks ORDER BY "timestamp" DESC LIMIT 3000000;')
+        'SELECT "timestamp", gas_used FROM eth.recent_blocks ORDER BY "timestamp" DESC;')
     data = reader.read_pandas()
     print('Data received')
     data = data.iloc[::-1]  # reverse order

@@ -21,7 +21,7 @@ def main():
     print('Querrying data...')
     flight_info = client.get_flight_info(
         flight.FlightDescriptor.for_command(
-            'SELECT "timestamp", gas_used FROM eth.blocks ORDER BY "timestamp" DESC LIMIT 3000000;'),
+            'SELECT "timestamp", gas_used FROM eth.recent_blocks ORDER BY "timestamp" DESC;'),
         options)
     reader = client.do_get(flight_info.endpoints[0].ticket, options)
     data = reader.read_pandas()

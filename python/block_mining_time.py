@@ -13,7 +13,7 @@ def main():
     client = Client(arguments.api_key)
     print('Querrying data...')
     reader = client.query(
-        'SELECT number, "timestamp" FROM eth.blocks ORDER BY number DESC LIMIT 1000000;')
+        'SELECT number, "timestamp" FROM eth.recent_blocks ORDER BY number DESC;')
     data = reader.read_pandas()
     print('Data received')
 
