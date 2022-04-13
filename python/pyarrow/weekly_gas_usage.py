@@ -2,7 +2,9 @@ from argparse import ArgumentParser
 
 import matplotlib.pyplot as plt
 import pandas as pd
-from spicepy import Client
+from pyarrow import flight
+
+from grpc_cert import get_grpc_cert
 
 
 def main():
@@ -10,11 +12,18 @@ def main():
     parser.add_argument('api_key', help='API key to authenticate with')
     arguments = parser.parse_args()
 
+    get_grpc_cert()
+
     print('Connecting..')
-    client = Client(arguments.api_key)
+    client = flight.connect('grpc+tls://flight.spiceai.io')
+    token_pair = client.authenticate_basic_token('', arguments.api_key)
+    options = flight.FlightCallOptions(headers=[token_pair])
     print('Querrying data...')
-    reader = client.query(
-        'SELECT "timestamp", gas_used FROM eth.blocks ORDER BY "timestamp" DESC LIMIT 3000000;')
+    flight_info = client.get_flight_info(
+        flight.FlightDescriptor.for_command(
+            'SELECT "timestamp", gas_used FROM eth.blocks ORDER BY "timestamp" DESC LIMIT 3000000;'),
+        options)
+    reader = client.do_get(flight_info.endpoints[0].ticket, options)
     data = reader.read_pandas()
     print('Data received')
     data = data.iloc[::-1]  # reverse order
