@@ -19,7 +19,7 @@ def main():
     options = flight.FlightCallOptions(headers=[token_pair])
     print('Querrying data...')
     flight_info = client.get_flight_info(flight.FlightDescriptor.for_command(
-        'SELECT number, "timestamp" FROM eth.recent_blocks ORDER BY number DESC;'), options)
+        'SELECT number, "timestamp" FROM eth.blocks ORDER BY number DESC LIMIT 100000;'), options)
     reader = client.do_get(flight_info.endpoints[0].ticket, options)
     data = reader.read_pandas()
     print('Data received')
