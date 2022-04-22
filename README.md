@@ -1,21 +1,8 @@
-# Spice Data Samples
+# Spice.xyz Samples
 
-This repository is a collection of sample code showcasing usage of the Spice API.
+A collection of samples showcasing usage of [https://spice.xyz](Spice.xyz).
 
-## Python
+Get a free API key from [spice.xyz](https://spice.xyz).
 
-The python samples requires Python 3.7+ with the following packages:
-
-* matplotlib
-* pandas
-* pyarrow
-
-Those packages can be installed using `pip`, there are also listed in a `requirements.txt` file for a quick install with:
-
-```
-pip install -r requirements.txt
-```
-
-Each script needs an API key to access the API as its first arguments.
-
-`snippets` folder contains template code used as sample in the portal, the API key needs to be replaced to be used.
+- [Python](python/README.md)
+- [JavaScript](javascript/README.md)
