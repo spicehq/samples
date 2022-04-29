@@ -1,15 +1,21 @@
 {
-  "name": "spice-ethersjs-sample",
+  "name": "spice-web3-sample",
   "version": "1.0.0",
-  "description": "Spice.xyz ethers.js sample",
+  "description": "Spice.xyz web3.js sample",
   "main": "main.js",
   "type": "module",
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "spiceai",
+    "spice.xyz",
+    "web3"
+  ],
   "author": "Spice AI, Inc.",
   "license": "MIT",
   "dependencies": {
-    "ethers": "^5.5.1"
+    "web3": "^1.7.3"
   }
 }
