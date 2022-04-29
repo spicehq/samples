@@ -8,7 +8,7 @@ def main():
     parser.add_argument('api_key', help='Spice.xyz API key')
     arguments = parser.parse_args()
 
-    print('Connecting..')
+    print('Connecting...')
     client = Client(arguments.api_key)
     print('Querying data...')
     reader = client.query('SELECT number, "hash" FROM eth.recent_blocks ORDER BY number DESC LIMIT 10;')
