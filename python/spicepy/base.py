@@ -10,7 +10,7 @@ def main():
 
     print('Connecting..')
     client = Client(arguments.api_key)
-    print('Querrying data...')
+    print('Querying data...')
     reader = client.query('SELECT number, "hash" FROM eth.recent_blocks ORDER BY number DESC LIMIT 10;')
     data = reader.read_pandas()
     print(data)
