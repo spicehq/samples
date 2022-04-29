@@ -5,7 +5,7 @@ from spicepy import Client
 
 def main():
     parser = ArgumentParser()
-    parser.add_argument('api_key', help='API key to authenticate with')
+    parser.add_argument('api_key', help='Spice.xyz API key')
     arguments = parser.parse_args()
 
     print('Connecting..')
