@@ -1,0 +1,29 @@
+{
+  "name": "spice-spicejs-sample",
+  "version": "1.0.0",
+  "description": "Spice.xyz spice.js sample",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spicehq/samples.git"
+  },
+  "keywords": [
+    "spice.xyz",
+    "data",
+    "ai",
+    "web3"
+  ],
+  "author": "Spice AI, Inc. <webmaster@spice.ai>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spicehq/samples/issues"
+  },
+  "homepage": "https://github.com/spicehq/samples#readme",
+  "dependencies": {
+    "@spiceai/spice": "^0.1.0"
+  }
+}
