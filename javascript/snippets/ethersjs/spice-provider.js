@@ -28,6 +28,9 @@ export class SpiceProvider extends UrlJsonRpcProvider {
       case 'homestead':
         path = '/eth';
         break;
+      case 'polygon':
+        path = '/polygon';
+        break;
       default:
         logger.throwArgumentError(
           'unsupported network',
