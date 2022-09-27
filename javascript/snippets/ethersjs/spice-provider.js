@@ -28,7 +28,7 @@ export class SpiceProvider extends UrlJsonRpcProvider {
       case 'homestead':
         path = '/eth';
         break;
-      case 'polygon':
+      case 'matic':
         path = '/polygon';
         break;
       default:
