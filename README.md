@@ -6,3 +6,4 @@ Get a free API key from [spice.xyz](https://spice.xyz).
 
 - [Python](python/README.md)
 - [JavaScript](javascript/README.md)
+- [Golang](golang/README.md)
