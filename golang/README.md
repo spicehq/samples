@@ -1,13 +1,11 @@
-# JavaScript Samples
+# Golang Samples
 
 ## Requirements
 
-Node 18+
+Go 1.19+
 
 ## Snippets
 
 The `snippets` folder contains sample templates. The API key should be replaced for use.
 
-- [ethers.js](ethersjs)
-- [spice.js](spicejs)
-- [web3.js](web3js)
+- [gospice](gospice)
