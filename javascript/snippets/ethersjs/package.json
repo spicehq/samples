@@ -1,7 +1,7 @@
 {
   "name": "spice-ethersjs-sample",
   "version": "1.0.0",
-  "description": "Spice.xyz ethers.js sample",
+  "description": "Spice.ai ethers.js sample",
   "main": "main.js",
   "type": "module",
   "scripts": {

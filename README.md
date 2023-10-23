@@ -1,8 +1,8 @@
-# Spice.xyz Samples
+# Spice.ai Samples
 
-A collection of samples showcasing usage of [https://spice.xyz](Spice.xyz).
+A collection of samples showcasing usage of [https://spice.ai](Spice.ai).
 
-Get a free API key from [spice.xyz](https://spice.xyz).
+Get a free API key from [spice.ai](https://spice.ai).
 
 - [Python](python/README.md)
 - [JavaScript](javascript/README.md)

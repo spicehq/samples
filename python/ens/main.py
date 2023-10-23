@@ -98,7 +98,7 @@ if __name__ == '__main__':
 
     quoted_addresses = [f"'{address.lower()}'" for address in addresses]
 
-    print("Querying Spice.xyz for contracts ...")
+    print("Querying Spice.ai for contracts ...")
     sql = 'SELECT address, erc20_confidence, erc721_confidence, erc1155_confidence FROM eth.contracts WHERE address in (' + ",".join(
         quoted_addresses) + ')'
     contracts = client.query(sql).read_pandas()

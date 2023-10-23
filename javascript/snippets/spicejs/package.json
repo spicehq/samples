@@ -1,7 +1,7 @@
 {
   "name": "spice-spicejs-sample",
   "version": "1.0.0",
-  "description": "Spice.xyz spice.js sample",
+  "description": "Spice.ai spice.js sample",
   "main": "main.js",
   "type": "module",
   "scripts": {
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/spicehq/samples.git"
   },
   "keywords": [
-    "spice.xyz",
+    "spice.ai",
     "data",
     "ai",
     "web3"
