@@ -1,7 +1,7 @@
 {
   "name": "spice-web3-sample",
   "version": "1.0.0",
-  "description": "Spice.xyz web3.js sample",
+  "description": "Spice.ai web3.js sample",
   "main": "main.js",
   "type": "module",
   "devDependencies": {},
@@ -10,7 +10,7 @@
   },
   "keywords": [
     "spiceai",
-    "spice.xyz",
+    "spice.ai",
     "web3"
   ],
   "author": "Spice AI, Inc.",

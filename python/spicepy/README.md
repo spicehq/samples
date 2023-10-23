@@ -14,7 +14,7 @@ Install packages with pip:
 pip install -r requirements.txt
 ```
 
-Pass your API key to to each script as its first argument. Get a free API key from [spice.xyz](https://spice.xyz).
+Pass your API key to to each script as its first argument. Get a free API key from [spice.ai](https://spice.ai).
 
 ## Snippets
 
