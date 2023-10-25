@@ -11,12 +11,15 @@ match spice_client.query(
             while let Some(batch) = flight_data_stream.next().await {
             match batch {
                 Ok(batch) => {                   
-                    /* process batch */
-                    println!("{:?}", batch)
+                    println!("{:?}", batch);
                 },
-                Err(e) => { /* handle error */ },
+                Err(e) => {
+                    assert!(false, "Error: {}", e);
+                },
             };
             }
         }
-        Err(e) => { /* handle error */ }
+        Err(e) => {
+            assert!(false, "Error: {}", e);
+        }
     };
