@@ -33,7 +33,7 @@ pycryptodome==3.15.0
 pyrsistent==0.18.1
 python-dateutil==2.8.2
 pytz==2022.1
-requests==2.28.0
+requests==2.31.0
 rlp==3.0.0
 six==1.16.0
 spicepy @ git+https://github.com/spiceai/spicepy@4048061e13dd5e2b552dc24487f73cc6176f1967
