@@ -7,7 +7,12 @@ import ai.spice.SpiceClient;
 
 public class App {
     public static void main(String[] args) {
-        try (SpiceClient client = SpiceClient.builder().withApiKey("API_KEY").build()) {
+        try (
+            SpiceClient client = SpiceClient.builder()
+                .withApiKey("API_KEY")
+                .withSpiceCloud()
+                .build()
+        ) {
             FlightStream stream = client.query(
                 "SELECT \"VendorID\", \"tpep_pickup_datetime\", \"fare_amount\" FROM taxi_trips LIMIT 10"
             );
