@@ -10,6 +10,6 @@
   "author": "Spice AI, Inc.",
   "license": "MIT",
   "dependencies": {
-    "ethers": "^5.5.1"
+    "ethers": "^6.17.0"
   }
 }
